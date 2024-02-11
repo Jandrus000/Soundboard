@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="30px">
+
+
+            <Button
+                android:id="@+id/iphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="iphone notification"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/leaving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="we are leaving"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/munch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="munch"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/brother"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="this guy stinks"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/sad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="sad spongebob cue"
+                android:backgroundTint="@color/purple_200"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="30px" >
+
+            <Button
+                android:id="@+id/tacobell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="taco bell"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/burger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="tasty burger"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/what"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="what?"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/wilhelm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="wilhelm scream"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/wort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="wort wort wort"
+                android:backgroundTint="@color/purple_200"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

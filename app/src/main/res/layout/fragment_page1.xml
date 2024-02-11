@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="30px">
+
+
+            <Button
+                android:id="@+id/alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alarm"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/baby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="Baby Crying"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/boing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="boing"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/bonk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="bonk"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/car_horn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="car horn"
+                android:backgroundTint="@color/purple_200"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="30px" >
+
+            <Button
+                android:id="@+id/cartoon_run"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cartoon run"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/applause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="applause"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/explosion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="explosion"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/yell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="goofy yell"
+                android:backgroundTint="@color/purple_200"/>
+            <Button
+                android:id="@+id/horse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:text="horse"
+                android:backgroundTint="@color/purple_200"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -14,31 +14,37 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.soundboard.ui.theme.SoundBoardTheme
+import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : ComponentActivity() {
-    fun playSound(path: String){
-        var mp = MediaPlayer()
-        mp.setDataSource(
-            this,
-            Uri.parse(path)
-        )
-        mp.prepare()
-        mp.start()
-    }
+class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        println("Successfully set layout")
 
-        var marineButton = findViewById<Button>(R.id.marines)
+        //makes button objects to change page
+        val page1Btn = findViewById<Button>(R.id.page1)
+        val page2Btn = findViewById<Button>(R.id.page2)
 
-        println("Objects created")
-        marineButton.setOnClickListener {
-            println("Inside click listener")
-            playSound("android.resource://" + this.packageName + "/" + R.raw.marines_audio)
+        //sets default fragment to page1
+        replaceFragment(Page1())
 
+        //event listeners for when buttons are pressed
+        page1Btn.setOnClickListener {
+            replaceFragment(Page1())
+        }
+        page2Btn.setOnClickListener {
+            replaceFragment(Page2())
         }
 
     }
 
+    //function to change the fragment to the correct page
+    private fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.frame, fragment)
+            .commit()
+    }
 }

@@ -15,95 +15,36 @@
         android:textSize="25dp"
         android:layout_gravity="center"/>
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
-
-        <LinearLayout
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/page1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:height="20px"
             android:layout_weight="1"
-            android:layout_margin="30px">
-
-
-            <Button
-                android:id="@+id/marines"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="we are leaving"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button1"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button2"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button3"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button4"/>
-
-        </LinearLayout>
-        <LinearLayout
+            android:text="Page 1"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/page2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:height="20px"
             android:layout_weight="1"
-            android:layout_margin="30px" >
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button5"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button6"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button7"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button8"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"
-                android:text="button9"/>
-
-        </LinearLayout>
-
+            android:text="Page 2"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
     </LinearLayout>
+
+<!--    container for fragment layouts-->
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 
 
